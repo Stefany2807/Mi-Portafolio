@@ -1,0 +1,601 @@
+body {
+	width: 100%;
+	background-color: #F2F5F7;
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.headerPrincipal .container {
+    display: flex; /* esto hace que el/los objetos se acomoden facilmente en el navegador de un lado a otro*/
+    align-items: center; /*sirve para que los elementos queden en el medio o alineados*/
+    justify-content: space-between; /*para crear espacios entre los elementos*/
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.headerPrincipal-nav {
+    display: flex; /* esto hace que los menus se pongan de lado*/
+}
+
+.headerPrincipal {
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: right;
+	background-color: #FFF;
+	z-index: 99;
+	border-bottom: #f5f5f5 solid 1px;
+
+}
+
+.headerPrincipal-titulo {
+	font-weight: bold;
+	font-size: 1px;
+	margin-bottom: 10px;
+	border-radius: 30%;
+	padding-left: 41px;
+}
+
+.headerPrincipal-titulo a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.headerPrincipal-nav-link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #9799A6;
+	background-color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+
+	border-bottom: 1px solid #9799A6;
+}
+
+/* SECCION BANNER */
+
+.banner-img {
+    
+    background: url("../imagenes/fondo.jpg")  no-repeat center / cover;
+    
+    
+    
+  }
+  
+  .banner-texto {
+    padding-top: 8%;
+    padding-left: 8%; 
+    text-decoration-color: #fdfdfd;
+  }
+  .banner-texto h1 {
+    color: #ffffff;
+    font-family: Pacifico, cursive;
+    left: 45%;
+    top: 45%;
+    text-align: center;
+    font-size: 55px;
+    height: 170px; 
+    text-shadow: 3px 6px   #111010;
+    padding-top: 1rem;
+  }
+ 
+  .banner-texto p {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 1.6em;
+    
+    width: 60%;
+    height: 200px;
+    letter-spacing: 0.5px;
+    text-shadow: 3px 1px   #111010;
+    margin: 0px 0px 0px 150px ;
+
+  }
+  .banner-links {
+    font-size: 20px;
+    color: #0c0707;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-decoration-style: wavy;  
+    margin: 150px 0px 0px 180px;
+    
+  }
+  .banner-links:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+/*Cambio de font-size a todos los titulos*/
+
+.titulos {
+	padding: 18px;
+    font-size: 2rem;
+    font-weight:500px;
+	align-items: center;
+	text-align: center;
+}
+
+/*SobreMi*/
+
+.sobreMi{
+	display: flex; /* esto hace que el/los objetos se acomoden facilmente en el navegador de un lado a otro*/
+    align-items: center; /*sirve para que los elementos queden en el medio o alineados*/
+    justify-content: space-between; 
+    background: #d8e6fa;	
+	text-align: center;
+    padding: 0.5rem 8rem;
+}
+
+.sobreMi div{
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.sobreMi div p{
+	display: flex; /* esto hace que el/los objetos se acomoden facilmente en el navegador de un lado a otro*/
+    align-items: center; /*sirve para que los elementos queden en el medio o alineados*/
+    justify-content: space-between; /*para crear espacios entre los elementos*/
+    font-size: 1.2rem;
+    font-style: italic;
+	padding-left: 10px;
+    padding-right: 0px;
+}
+
+.sobreMi div img{
+	display: flex; /* esto hace que el/los objetos se acomoden facilmente en el navegador de un lado a otro*/
+    align-items:flex-end; /*sirve para que los elementos queden en el medio o alineados*/
+    justify-content: space-between; /*para crear espacios entre los elementos*/
+    width: 45%;
+    padding-top: 10px;
+    border-radius: 28%;
+}
+
+
+
+.sobreMi-img img{
+	display: flex; /* esto hace que el/los objetos se acomoden facilmente en el navegador de un lado a otro*/
+	flex-wrap: wrap;
+    align-items: center; /*sirve para que los elementos queden en el medio o alineados*/
+    /*para crear espacios entre los elementos*/
+    border-radius: 100%;
+    width: 60%;
+    padding-right: 5px;
+    flex-wrap: wrap-reverse;
+}
+
+
+/*Secciones Skills - Other Skills - Hobbies*/
+
+.secciones{
+	font-family: 'Open Sans',Arial,sans-serif;
+    text-align: center;
+    margin-block-end: 50px;
+}
+
+.secciones-titulo{
+    margin-top: 2rem;
+}
+
+.secciones-lista ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 3vh;
+}
+
+.secciones-lista ul li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 174px;
+    height: 176px;
+    background: #ffffff;
+    transition: .3s;
+    box-shadow: 2px 2px 2px #938e8e;
+    position: relative;
+    
+}
+
+.secciones-lista ul li :hover{
+    transform: scale(1.2);
+    filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
+    transition: .1s all;
+}
+
+.secciones-lista h3{
+    padding-top: 0.3rem;
+    font-size: 1.2em;
+}
+
+.secciones-lista ul li img{
+    width: 65%;
+}
+
+section#hobbies.secciones  {
+    background-color: #edc7f7;
+    padding: 10px 200px 55px 200px;
+    margin-bottom: 100px;
+    margin-block-end: 0px;
+    gap: 10vh;
+    
+}
+
+section#hobbies.secciones ul li{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background: #ffffff;
+    transition: .3s;
+    box-shadow: 2px 2px 2px #6b6969;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/*Formacion Academica*/
+
+.formacion-academica{
+    padding: 0px 8rem 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EAF2FD;
+}
+
+.formacion-lista div img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
+    transition: .1s all;
+}
+
+.formacion-lista li h2:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
+    transition: .1s all;
+}
+
+.formacion-academica-titulo{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.formacion-lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3vh;
+    width: 60rem;
+    gap: 3vh 2vh;
+    
+}
+
+.formacion-lista li{
+    
+    width: 30%;
+    transition: .3s;
+    box-shadow: 2px 2px 2px #938e8e;
+    position: relative;
+}
+
+.formacion-lista li div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 200px;
+}
+
+.formacion-lista img{
+    width: 55%;
+}
+
+.formacion-lista li h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    text-align: center;
+    padding-block-end: 8px;
+}
+
+.formacion-lista li h3{
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    padding-block-end: 8px;
+}
+
+/*Proyectos*/
+
+.proyectos{
+    background-color:rgb(252, 249, 239);
+}
+
+.proyectos-titulo{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.proyectos-seccion img{
+    width: 45%;
+    box-shadow: 2px 2px 2px #6e6c6c;
+}
+
+.proyectos-seccion img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
+    transition: .1s all;
+}
+
+/*proyectos impar*/
+.proyectos-seccion:nth-child(even){
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*proyectos par*/
+.proyectos-seccion:nth-child(odd){
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.proyectos-seccion .proyectos-descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    padding: 0 2rem;
+}
+
+.proyectos-descripcion h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.proyectos-descripcion h3{
+    font-size: 1.5em;
+    font-weight: 500;
+    font-style: italic;
+    
+}
+
+.button{
+    display: flex;
+    justify-content:flex-start;
+    gap: 2vh;
+}
+
+.button a{
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 2px solid #1f2068;
+} 
+
+.button-repositorio{
+    border-radius: 8px;
+    background-color: #5bb4fd;
+    color: #FFF;
+    height: 19px;
+    font-size: 16px;
+    
+    
+}
+
+.button-repositorio:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
+    transition: .1s all;
+}
+
+.button-demo {
+    border-radius: 8px;
+    color: rgb(10, 9, 9);
+    background: #ffc31f;
+}
+
+.button-demo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
+    transition: .1s all;
+}
+
+/*contacto */
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 8rem;
+    justify-content: space-around;
+    gap: 1vh;
+    
+}
+
+
+.mensaje-enviado{
+    position: absolute;
+    background: white;
+    width: 100%;
+    height:100%;
+}
+
+.contacto-box-titulos .texto{
+    font-size: 1.3em;
+    margin: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contacto-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.contacto-box-form{
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 6px
+}
+
+.input-padron{
+    height: 30px;
+    font-size: 1em;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid #797777;
+
+}
+
+.contacto-box-form--mensaje .input-padron{
+    height: 100%;
+ }
+
+ .contacto-box-form--mensaje{
+    height: 40%;
+ }
+
+ .contacto-box-form--mensaje #mensaje::placeholder{
+    font-size: 1.4em;
+}
+
+
+.contacto--invalid .mensaje-error{
+    display: block;
+    font-size: 1em;
+    color: red;
+    padding: 6px;
+}
+
+.mensaje-error{
+    display:none;
+}
+
+
+.contacto--invalid .input-padron{
+    border: 1px solid red;
+    color: red;
+}
+
+
+
+.enviar{
+    margin: 20px;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1;
+    padding: 10px 28px;
+    font-size: 20px;
+    background: rgb(250, 246, 35);
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    align-items: center;
+}
+
+.enviar:hover{
+   
+
+    color: rgb(0, 0, 0);
+    background: #8de42a;
+    transform: scale(1.1);
+    filter: drop-shadow(5px 4px 1px hsl(0, 0%, 68%));
+    transition: .1s all;
+} 
+
+
+/*footer*/
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    background-color: rgb(248, 210, 148);
+    text-align: center;
+    bottom: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+footer img{
+    
+    flex-direction: column;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    padding-right: 10px;
+    
+    
+}
+
+footer a{
+    
+    flex-direction: column;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    padding-right: 10px;
+  
+}
+
+
+
+/* <!-- SECCION CONTACTO -->
+	<a name="contacto"></a>
+	<section class="contacto fondo-claro ancho-pagina">
+		<div class="contacto-izq">
+
+			<h2  class="proyectos-titulo titulos">CONTACTATE CONMIGO</h2>
+
+
+			<h3 class="contacto-lista-subtitulo">¿Estas interesado/a en contactarme? </h3>
+			<h3 class="contacto-lista-subtitulo"> Completa el siguiente formulario y me pondré en contacto lo más pronto posible.</h3>
+			<div class="contacto-img">
+				<img src="imagenes/contacto.png" alt="">
+			</div>
+		</div>
+		<div class="contacto-der">
+			<form action="">
+				<input class="contacto-input" type="text" name="tu-nombre" placeholder="Nombre:">
+				<input class="contacto-input" type="text" name="tu-email" placeholder="Email:">
+				<input class="contacto-input" type="text" name="tu-asunto" placeholder="Asunto:">
+				<textarea class="contacto-textarea" name="tu-texto" id="" cols="30" rows="10"
+					placeholder="Texto:"></textarea>
+				<input class="contacto-submit btn" type="submit" name="Stefa" placeholder="Holi">
+			</form>
+		</div>
+	</section>
+*/
+
+
+

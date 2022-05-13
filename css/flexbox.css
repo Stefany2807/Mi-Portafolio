@@ -1,0 +1,210 @@
+/* RESPONSIBLE MOBILE: esta informacion de abajo queda configurada para dispositivos de medida de hasta 768px, es decir como hasta una tablet, despues de superado esa medida, toma la configuracion normal de un computador y queda indicada al inicio de este documento */
+
+/*RESPONSIVE */
+@media only screen and (max-width: 1040px){
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial; 
+        text-align: center;
+    }
+
+    /*Perfil*/
+   
+    .banner{
+        position: relative;
+    }
+
+  
+    .banner-texto h1{
+        flex-direction: column;
+        align-items: initial; 
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .banner-texto p{
+        text-align: 50%;
+        font-size: 1.4em;
+        margin: 10px 0px 0px 50px ;
+        margin-top: 2px;
+    }
+
+    .banner-links {
+        display: block;
+        text-align: right ;
+        font-size: 17px;
+        margin: 18px 0px 0px 40px ;
+        margin-top: 30px;
+
+    }
+
+    /*sobreMi*/
+    .sobreMi {
+        padding: 0.5rem 2rem;
+    }
+    .sobreMi div p{
+        font-size: 1.2rem;
+        padding-left: 10px
+    }
+    
+    .sobreMi div img{
+        width: 68%;
+        padding-top: 10px;
+        border-radius: 20%;
+      
+    }
+
+    /*Formacion Academica*/
+    .formacion-academica{
+        padding: 0.5rem 1rem;
+    }
+
+    .formacion-lista{
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        padding-block-end: 3em;
+        height: inherit
+        
+    }
+
+    .formacion-lista img{
+        width: 50%;
+        height: 60px;
+        
+    }
+
+
+    .formacion-lista li div{
+        height: 150px;
+    }
+
+    .formacion-lista li h2{
+        font-size: 1em;
+    }
+    
+    .formacion-lista li h3{
+        font-size: 0.8em;
+    }
+
+    /*Proyectos*/
+    .proyectos{
+        padding: 0.5rem 2rem;
+        
+    }
+
+    .proyectos-seccion img{
+        width: 70%
+    }
+
+    
+    .proyectos-seccion:nth-child(even){
+        flex-direction: column;
+    }
+
+    .proyectos-seccion:nth-child(odd){
+        flex-direction: column;
+
+    }
+
+   .proyectos-descripcion{
+        width: 100%;
+        margin-top: 1rem;
+        align-items: center;
+    }
+
+    /*contacto*/
+
+    .contacto-img{
+        display: flex;  
+        flex-direction: row;
+    }
+
+    .contacto{
+        padding: 0.5rem 2rem;
+    }
+
+    .contacto-box{
+        width: 100%;
+    }
+
+    .contacto-box-form{
+        height: 100%;
+    }
+
+    .box{
+        margin-bottom: 1rem;
+    }
+   
+    
+}
+    
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+	.container {
+		width: 85%;	
+	}
+
+	.subtitulo {
+		text-align: left;
+	}
+
+	.headerPrincipal-nav-link {
+		border-radius: 5px;
+		border: 1px solid #9799A6;
+	}
+
+	.headerPrincipal-nav-link:hover {
+		color: #FFF;
+		background-color: #9799A6;
+	}
+
+	.headerPrincipal-titulo {
+		margin: 0;
+	}
+
+	.headerPrincipal-nav {
+		width: auto;
+        flex-direction: row; 
+	}
+
+	.headerPrincipal-nav-link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
+
+    .sobreMi div img{
+        
+        width: 45%;
+        padding-top: 10px;
+        border-radius: 20%;
+      
+    }
+
+    section#hobbies.secciones ul li{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vh;
+        margin-top: 3vh;
+        flex-direction: column;
+        align-items: center;
+        width: 174px;
+        height: 176px;
+        background: #ffffff;
+        transition: .3s;
+        box-shadow: 2px 2px 2px #938e8e;
+        position: relative;
+    }
+
+   
+    
+}
+
+
